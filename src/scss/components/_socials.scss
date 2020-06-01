@@ -1,0 +1,51 @@
+.social {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 2em;
+  z-index: 10;
+
+  &__list-item:not(:last-child) {
+    margin-bottom: 0.25em;
+  }
+
+  &__list-item:nth-child(1) .slide-in {
+    transition-delay: 0.4s;
+  }
+  &__list-item:nth-child(2) .slide-in {
+    transition-delay: 0.2s;
+  }
+
+  &__link {
+    padding: 0.5em;
+    font-size: 0.85em;
+    line-height: 1;
+    background-color: $color-primary;
+    width: 2em;
+    height: 2em;
+    color: white;
+    display: block;
+    position: relative;
+    z-index: 5;
+    transform-origin: center bottom;
+    transform: scaleY(0);
+    @include transition;
+
+    &::before {
+      @include reset-BA;
+      background-color: white;
+      height: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      @include transition;
+    }
+
+    &:hover {
+      color: $color-primary;
+      &::before {
+        height: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,709 @@
+.section {
+  overflow: hidden;
+  &__parallax {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    margin-bottom: -40vh;
+    justify-content: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    background-color: $color-grey-dark;
+    @include bg;
+
+    @include respond(tab) {
+      height: 60vh;
+      margin-bottom: -30vh;
+    }
+
+    @include respond(mob) {
+      height: 50vh;
+      margin-bottom: -35vh;
+    }
+
+    &--img {
+      position: absolute;
+      width: 15%;
+      bottom: 5%;
+    }
+
+    & > * {
+      z-index: 3;
+    }
+
+    &__logo {
+      width: 10%;
+      flex: 1;
+      margin-top: -10%;
+
+      @include respond(tab) {
+        margin-top: -20%;
+      }
+      @include respond(mob) {
+        margin-top: -55%;
+      }
+    }
+
+    &::before,
+    &::after {
+      @include reset-BA;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+
+    &::before {
+      @include bg;
+      background-size: 40%;
+      background-position: left top;
+    }
+
+    &::after {
+      background-image: radial-gradient($color-grey 2%, transparent 20%),
+        radial-gradient($color-grey 2%, transparent 20%);
+      background-position: 0 0, 5px 5px;
+      background-size: 10px 10px;
+    }
+  }
+
+  &__content {
+    z-index: 5;
+    @include bg;
+    background-position: top center;
+    padding-top: 25%;
+    position: relative;
+
+    @include respond(tab) {
+      padding-top: 30%;
+    }
+    @include respond(mob) {
+      padding-top: 40%;
+    }
+  }
+
+  &__container {
+    width: 80%;
+    max-width: 60rem;
+    padding-bottom: 3em;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-family: "MostraNuova-Bold", sans-serif;
+    color: $color-grey;
+    line-height: 1.5;
+    display: block;
+    padding: 2em 1em;
+    margin-bottom: 15%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+    &::before,
+    &::after {
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &::before {
+      content: "Leonides";
+      text-transform: uppercase;
+      font-family: "MostraNuova-Light", sans-serif;
+      font-size: 0.5em;
+      letter-spacing: 5px;
+      bottom: 2.75em;
+    }
+
+    &::after {
+      content: "";
+      height: 2em;
+      background-image: url(./../assets/svg/ornament.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 25% 25%;
+      bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: -2rem;
+    margin-left: -2rem;
+
+    &__item {
+      display: inline-block;
+      flex: 1;
+      padding: 2rem;
+
+      &:nth-child(2) .slide {
+        transition-delay: 0.2s;
+      }
+      &:nth-child(3) .slide {
+        transition-delay: 0.4s;
+      }
+      &:nth-child(4) .slide {
+        transition-delay: 0.6s;
+      }
+    }
+
+    &__link {
+      position: relative;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+
+      // &.slide {
+      //   transform: translateY(50%);
+      // }
+
+      &:hover .section__list__link__header::before,
+      &:hover .section__list__link__bottom {
+        background-color: $color-link-hover;
+      }
+
+      &__header {
+        font-family: "MostraNuova-Bold", sans-serif;
+        font-size: 1.25em;
+        line-height: 1.25;
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        padding-bottom: 1em;
+        margin-bottom: 3em;
+        position: relative;
+
+        &::before {
+          content: "";
+          display: block;
+          width: 1.5em;
+          height: 2px;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          @include transition;
+        }
+      }
+
+      &__bottom {
+        width: 100%;
+        height: 0.5em;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        @include transition;
+      }
+
+      & .circle-img {
+        padding: 0;
+        width: 135%;
+
+        & > img {
+          z-index: 1;
+        }
+
+        &::after,
+        &__circle {
+          width: 100%;
+          height: 100%;
+        }
+
+        &__circle {
+          z-index: 10;
+        }
+      }
+
+      &--gold {
+        color: $color-bg-gold;
+        & > .section__list__link__bottom,
+        & > .section__list__link__header::before {
+          background-color: $color-primary;
+        }
+      }
+      &--purple {
+        color: $color-bg-purple;
+        & > .section__list__link__bottom,
+        & > .section__list__link__header::before {
+          background-color: lightcoral;
+        }
+      }
+      &--grey {
+        color: $color-bg-grey;
+        & > .section__list__link__bottom,
+        & > .section__list__link__header::before {
+          background-color: #999999;
+        }
+      }
+      &--black {
+        color: $color-bg-black;
+        & > .section__list__link__bottom,
+        & > .section__list__link__header::before {
+          background-color: #333;
+        }
+      }
+    }
+  }
+
+  &__subheading {
+    margin: 2em;
+    margin-top: 3em;
+
+    &--gold {
+      color: $color-primary;
+    }
+    &--purple {
+      color: lightcoral;
+    }
+    &--grey {
+      color: #999;
+    }
+    &--black {
+      color: #333;
+    }
+  }
+
+  & p {
+    margin-bottom: 1em;
+  }
+
+  &__footer {
+    display: block;
+    height: 2em;
+    margin-top: 15%;
+    background-image: url(./../assets/svg/ornament.svg);
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--hero {
+    overflow: initial;
+    & .section__parallax {
+      margin-bottom: -50vh;
+      height: 150vh;
+      & h1 {
+        margin-bottom: 50vh;
+      }
+
+      &__logo {
+        flex: 0;
+        width: 8em;
+        z-index: 1;
+
+        &.slide {
+          transform: translateY(-120%);
+        }
+        // opacity: 0;
+      }
+    }
+  }
+
+  &--about {
+    & .section__parallax {
+      z-index: -1;
+      height: 50vh;
+    }
+
+    & .section__content {
+      background-image: url(./../assets/svg/bg-about.svg);
+    }
+
+    & .section__heading {
+      background-image: url(./../assets/svg/header-about.svg);
+    }
+
+    & .section__parallax--img {
+      right: 5rem;
+    }
+  }
+
+  &--offer {
+    & .section__parallax {
+      background-image: url(./../assets/paralax/bg-offer.jpg);
+
+      &::before {
+        background-image: url(./../assets/svg/bg-offer-circles.svg);
+      }
+    }
+
+    & .section__content {
+      background-image: url(./../assets/svg/bg-offer.svg);
+    }
+
+    & .section__heading {
+      background-image: url(./../assets/svg/header-offer.svg);
+    }
+
+    & .section__parallax--img {
+      left: 5rem;
+    }
+  }
+
+  &--needs {
+    & .section__parallax {
+      background-image: url(./../assets/paralax/bg-needs.jpg);
+
+      &::before {
+        background-image: url(./../assets/svg/bg-needs-circles.svg);
+      }
+    }
+
+    & .section__content {
+      background-image: url(./../assets/svg/bg-needs.svg);
+    }
+
+    & .section__heading {
+      background-image: url(./../assets/svg/header-need.svg);
+    }
+
+    & .section__list__item:nth-child(1) {
+      z-index: 5;
+      & .circle-img::after {
+        transform: translate(-48%, -49%);
+      }
+    }
+
+    & .section__list__item:nth-child(2) {
+      z-index: 6;
+      & .circle-img::after {
+        transform: translate(-48%, -50%);
+      }
+    }
+
+    & .section__list__item:nth-child(3) {
+      z-index: 7;
+      & .circle-img::after {
+        transform: translate(-52%, -50%);
+      }
+    }
+
+    & .section__list__item:nth-child(4) {
+      z-index: 8;
+      & .circle-img::after {
+        transform: translate(-52%, -49%);
+      }
+    }
+  }
+
+  &--transform {
+    // position: relative;
+
+    & .section__parallax {
+      background-image: url(./../assets/paralax/bg-transform.jpg);
+
+      &::before {
+        background-image: url(./../assets/svg/bg-transform-circles.svg);
+      }
+    }
+
+    & .section__content {
+      position: relative;
+      z-index: 5;
+      background-image: url(./../assets/svg/bg-transform.svg);
+    }
+
+    & .section__heading {
+      background-image: url(./../assets/svg/header-transform.png);
+      background-size: 65%;
+    }
+
+    & .section__list__item:nth-child(1) {
+      flex: 1;
+      z-index: 5;
+      & .circle-img::after {
+        transform: translate(-48%, -49%);
+      }
+    }
+
+    & .section__list__item:nth-child(2) {
+      flex: 2;
+      z-index: 6;
+      & .circle-img {
+        width: 90%;
+
+        &::after {
+          transform: translate(-50%, -48%);
+        }
+      }
+    }
+
+    & .section__list__item:nth-child(3) {
+      flex: 1;
+      z-index: 7;
+      & .circle-img::after {
+        transform: translate(-52%, -50%);
+      }
+    }
+  }
+
+  &--partners {
+    & .section__parallax {
+      background-image: url(./../assets/paralax/bg-partners.jpg);
+
+      &::before {
+        background-image: url(./../assets/svg/bg-partners-circles.svg);
+        background-size: 40%;
+      }
+    }
+
+    & .section__content {
+      background-image: url(./../assets/svg/bg-partners.svg);
+    }
+
+    & .section__heading {
+      background-image: url(./../assets/svg/header-partners.png);
+      background-size: 45%;
+    }
+
+    & .section__list {
+      flex-flow: wrap;
+      padding-bottom: 2em;
+
+      &__item {
+        flex: 1 33.3333%;
+
+        &:nth-child(1) .slide {
+          transform: translate(-50%, 0);
+          transition-delay: 0s;
+        }
+        &:nth-child(2) .slide {
+          transform: translate(0, 100%);
+          transition-delay: 0s;
+        }
+        &:nth-child(3) .slide {
+          transform: translate(50%, 0);
+          transition-delay: 0s;
+        }
+
+        &:nth-child(4) .slide {
+          transform: translate(-50%, 0);
+          transition-delay: 0.2s;
+        }
+        &:nth-child(5) .slide {
+          transform: translate(0, 100%);
+          transition-delay: 0.2s;
+        }
+        &:nth-child(6) .slide {
+          transform: translate(50%, 0);
+          transition-delay: 0.2s;
+        }
+
+        &:nth-child(7) .slide {
+          transform: translate(-50%, 0);
+          transition-delay: 0.4s;
+        }
+        &:nth-child(8) .slide {
+          transform: translate(0, 100%);
+          transition-delay: 0.4s;
+        }
+        &:nth-child(9) .slide {
+          transform: translate(50%, 0);
+          transition-delay: 0.4s;
+        }
+      }
+
+      &__link {
+        color: $color-grey;
+        padding: 0.8em;
+        display: inline-block;
+
+        &::before {
+          @include reset-BA;
+          bottom: 0;
+          left: 0;
+          height: 3px;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+
+  &--map {
+    & .map {
+      width: 100%;
+      height: 60vh;
+      filter: grayscale(1);
+
+      @include respond(tab) {
+        height: 45vh;
+      }
+      @include respond(mob) {
+        height: 30vh;
+      }
+    }
+  }
+
+  &--contact {
+    & .section__parallax {
+      background-image: url(./../assets/paralax/bg-contact.jpg);
+
+      &::before {
+        background-image: url(./../assets/svg/bg-contact-circles.svg);
+
+        background-size: 70%;
+      }
+    }
+
+    & .section__content {
+      background-image: url(./../assets/svg/bg-contact.svg);
+      padding-bottom: 25%;
+    }
+
+    & .section__heading {
+      background-image: url(./../assets/svg/header-contact.png);
+      background-size: 40%;
+    }
+
+    & .address {
+      font-family: "MostraNuova-Bold", sans-serif;
+      text-transform: uppercase;
+      font-style: normal;
+      color: $color-primary;
+      margin-bottom: 20%;
+      padding: 1em;
+      position: relative;
+
+      &::before {
+        @include reset-BA;
+        width: 1.5em;
+        height: 2px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-primary;
+      }
+
+      & > span {
+        color: $color-grey;
+      }
+    }
+
+    & .contact-form {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: wrap;
+      margin-bottom: 15%;
+      font-size: 1.6rem;
+      transition-delay: 0.2s;
+
+      &__consignor__input__spot,
+      &__message__textarea {
+        -webkit-appearance: none;
+        appearance: none;
+      }
+
+      &__consignor__input__spot,
+      &__message__textarea,
+      &__submit__input {
+        color: $color-grey;
+        text-transform: uppercase;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        padding: 0.5em;
+      }
+
+      &__consignor,
+      &__message {
+        flex: 1 1 50%;
+        height: 7.6em;
+      }
+
+      &__consignor {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-self: start;
+        padding-right: 2rem;
+
+        &__input {
+          position: relative;
+        }
+      }
+
+      &__message {
+        position: relative;
+        &__textarea {
+          resize: none;
+          border: 1px solid $color-primary;
+          height: 100%;
+        }
+        padding-left: 2rem;
+      }
+
+      &__submit {
+        margin-top: 10%;
+        position: relative;
+        width: 100%;
+        display: block;
+
+        &__input {
+          border: none;
+          background-color: transparent;
+          text-transform: uppercase;
+          font-weight: 500;
+          cursor: pointer;
+          padding: 0;
+          line-height: 2;
+
+          &:hover + .contact-form__submit__border {
+            height: 5px;
+          }
+        }
+      }
+
+      &__consignor__input,
+      &__submit {
+        &::before {
+          @include reset-BA;
+          height: 1px;
+          background-color: $color-primary;
+          bottom: 0;
+          left: 0;
+        }
+      }
+
+      &__submit {
+        &::before {
+          @include transition;
+        }
+
+        &:hover::before {
+          height: 5px;
+        }
+      }
+
+      & .error {
+        width: 100%;
+        // height: 0;
+        font-size: 0.75em;
+        color: #900;
+        position: absolute;
+        bottom: -1em;
+        display: block;
+        padding-left: 0.5em;
+        text-align: left;
+        opacity: 0;
+        @include transition;
+
+        &.active {
+          opacity: 1;
+          bottom: -1.5em;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@mixin transition {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin reset-BA {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+}
+
+@mixin bg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

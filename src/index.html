@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leonidas</title>
+    <link rel="stylesheet" href="scss/main.scss" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar__flags">
+        <span class="navbar__flag navbar__flag--left">01</span>
+        <span class="navbar__flag navbar__flag--left">02</span>
+        <span class="navbar__flag navbar__flag--left">03</span>
+        <button class="btn navbar__btn-enter">
+          <span>menu</span>
+          <img src="assets/svg/menu.svg"  alt="menu" class="navbar__btn-enter__icon"></img>
+        </button>
+        <span class="navbar__flag navbar__flag--right">04</span>
+        <span class="navbar__flag navbar__flag--right">05</span>
+        <span class="navbar__flag navbar__flag--right">06</span>
+      </div>
+
+      <nav class="navbar__menu">
+        <span class="navbar__menu__header">MENU</span>
+        <button class="navbar__menu__btn-close btn"></button>
+        <ul class="navbar__menu__list">
+          <li class="navbar__menu__list-item">
+            <a href="#about" class="navbar__menu__link">
+              <div class="circle-img">
+                <span class="circle-img__circle"></span>
+                <span class="circle-img__circle circle-img__circle--big"></span>
+                <img src="./assets/menu/menu-01.jpg" class="navbar__menu__link__img  img" alt="menu image" />
+              </div>
+              <span class="navbar__menu__link__num">01</span>
+              <span class="navbar__menu__link__text">O spoločnosti</span>
+            </a>
+          </li>
+          <li class="navbar__menu__list-item">
+            <a href="#offer" class="navbar__menu__link">
+              <div class="circle-img">
+                <span class="circle-img__circle"></span>
+                <span class="circle-img__circle circle-img__circle--big"></span>
+                <img src="./assets/menu/menu-02.jpg" class="navbar__menu__link__img  img" alt="menu image" />
+              </div>
+              <span class="navbar__menu__link__num">02</span>
+              <span class="navbar__menu__link__text">Čo ponúka Leonides</span>
+            </a>
+          </li>
+          <li class="navbar__menu__list-item">
+            <a href="#needs" class="navbar__menu__link">
+              <div class="circle-img">
+                <span class="circle-img__circle"></span>
+                <span class="circle-img__circle circle-img__circle--big"></span>
+                <img src="./assets/menu/menu-03.jpg" class="navbar__menu__link__img  img" alt="menu image" />
+              </div>
+              <span class="navbar__menu__link__num">03</span>
+              <span class="navbar__menu__link__text">Potreby ľudí</span>
+            </a>
+          </li>
+          <li class="navbar__menu__list-item">
+            <a href="#transform" class="navbar__menu__link">
+              <div class="circle-img">
+                <span class="circle-img__circle"></span>
+                <span class="circle-img__circle circle-img__circle--big"></span>
+                <img src="./assets/menu/menu-04.jpg" class="navbar__menu__link__img  img" alt="menu image" />
+              </div>
+              <span class="navbar__menu__link__num">04</span>
+              <span class="navbar__menu__link__text">Zmeň svoj život</span>
+            </a>
+          </li>
+          <li class="navbar__menu__list-item">
+            <a href="#partners" class="navbar__menu__link">
+              <div class="circle-img">
+                <span class="circle-img__circle"></span>
+                <span class="circle-img__circle circle-img__circle--big"></span>
+                <img src="./assets/menu/menu-05.jpg" class="navbar__menu__link__img  img" alt="menu image" />
+              </div>
+              <span class="navbar__menu__link__num">05</span>
+              <span class="navbar__menu__link__text">Partneri</span>
+            </a>
+          </li>
+          <li class="navbar__menu__list-item">
+            <a href="#contact" class="navbar__menu__link">
+              <div class="circle-img">
+                <span class="circle-img__circle"></span>
+                <span class="circle-img__circle circle-img__circle--big"></span>
+                <img src="./assets/menu/menu-06.jpg" class="navbar__menu__link__img  img" alt="menu image" />
+              </div>
+              <span class="navbar__menu__link__num">06</span>
+              <span class="navbar__menu__link__text">Kontakt</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="section section--hero">
+        <div class="section__parallax">
+          <h1>SINE METU</h1>
+          <img src="./assets/svg/logo.svg" class="section__parallax__logo slide"></img>
+        </div>
+      </section>
+      
+      <section class="section section--about">
+        <div class="section__content">
+          <div id="about" class="section__container about">
+            <h2 class="section__heading">O spoločnosti</h2>
+  
+            <ul class="section__list">
+              <li class="section__list__item">
+                <a href="#" class="section__list__link slide section__list__link--gold">
+                  <span class="section__list__link__header">
+                    Inšpirovaný<br />históriou
+                  </span>
+                  <img
+                    src="assets/menu/menu-about-1.jpg"
+                    alt=""
+                    class="section__list__link__img img"
+                  />
+                  <span class="section__list__link__bottom"></span>
+                </a>
+              </li>
+              <li class="section__list__item">
+                <a href="#" class="section__list__link slide section__list__link--purple slide">
+                  <span class="section__list__link__header">
+                    Vízia<br />a poslanie
+                  </span>
+                  <img
+                    src="assets/menu/menu-about-2.jpg"
+                    alt=""
+                    class="section__list__link__img img"
+                  />
+                  <span class="section__list__link__bottom"></span>
+                </a>
+              </li>
+              <li class="section__list__item">
+                <a href="#" class="section__list__link slide section__list__link--grey">
+                  <span class="section__list__link__header">
+                    Hodnoty<br />Leonides
+                  </span>
+                  <img
+                    src="assets/menu/menu-about-3.jpg"
+                    alt=""
+                    class="section__list__link__img img"
+                  />
+                  <span class="section__list__link__bottom"></span>
+                </a>
+              </li>
+            </ul>
+  
+            <h4 class="section__subheading section__subheading--gold">
+              Inšpirovaný históriou
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+              perspiciatis quia blanditiis laudantium, perferendis corrupti
+              quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+              officia quidem accusamus dolore? Tempore! Eos eligendi quibusdam
+              rerum quos, iste quidem eius accusamus, eum explicabo molestiae
+              molestias obcaecati nesciunt a officiis rem veritatis officia sit
+              itaque!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+              commodi numquam dicta consequuntur, at eius ad cumque ratione?
+              Consequuntur, odio. Lorem, ipsum dolor sit amet consectetur
+              adipisicing elit. Dolores labore ratione, quo excepturi a mollitia
+              ipsum harum magnam fuga expedita velit maiores distinctio
+              repudiandae sequi neque dolor illum vel doloremque. Lorem ipsum
+              dolor sit, amet consectetur adipisicing elit. Est aut ab aliquid
+              voluptas? Autem cumque, officiis placeat adipisci aut sapiente
+              dolorum impedit, sequi modi in dolore iusto vel aliquid
+              accusantium?Lorem ipsum dolor, sit amet consectetur adipisicing
+              elit. Qui quaerat magni aut iure.
+            </p>
+            <h4 class="section__subheading section__subheading--purple">
+              Vízia a poslanie Leonides
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+              eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+              commodi numquam dicta consequuntur, at eius ad cumque ratione?
+              Consequuntur, odio. Aliquid ducimus libero quia velit veritatis
+              voluptatem, officiis ut laudantium consectetur, facere sit nihil id?
+              Rerum odio similique doloribus. Blanditiis, placeat delectus.
+              Dolores labore ratione, quo excepturi a mollitia ipsum harum magnam
+              fuga expedita velit maiores distinctio repudiandae sequi neque dolor
+              illum vel doloremque. Lorem ipsum dolor sit, amet consectetur
+              adipisicing elit. Est aut ab aliquid voluptas? Autem cumque,
+              officiis placeat adipisci aut sapiente dolorum impedit, sequi modi
+              in dolore iusto vel aliquid accusantium?Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Qui quaerat magni aut iure.
+            </p>
+            <h4 class="section__subheading section__subheading--grey">
+              Hodnoty
+            </h4>
+            <ul>
+              <li>Transparentnosť</li>
+              <li>Etika</li>
+              <li>Odvaha</li>
+              <li>Viera</li>
+              <li>Líderstvo</li>
+              <li>Vzdelávanie</li>
+              <li>Tímovosť</li>
+              <li>Presvedčenie</li>
+            </ul>
+            <h4 class="section__subheading section__subheading--black">
+              Stabilita a zázemie spoločnosti
+            </h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+              perspiciatis quia blanditiis laudantium, perferendis corrupti
+              quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+              officia quidem accusamus dolore?<br />Eum explicabo molestiae
+              molestias obcaecati nesciunt a officiis rem veritatis officia sit
+              itaque!
+            </p>
+            <span class="section__footer"></span>
+          </div><!-- end container -->
+          <img src="./assets/images/money.png" class="section__parallax--img" alt="money"></img>
+        </div>
+      </section><!--end of about-->
+
+      <section class="section section--masonry masonry">
+        <div class="masonry__item masonry__item--society">
+          <div class="masonry__item__inner masonry__item__inner--purple">
+            <span>Zmeň svoj život</span>
+            <span class="bold">v spoločenskom postavení</span></span>
+          </div>
+        </div>
+        <div class="masonry__item masonry__item--carrier">
+          <div class="masonry__item__inner masonry__item__inner--grey">
+            <span>Zmeň svoj život</span>
+            <span class="bold">vo svojej kariére</span>
+          </div>
+        </div>
+        <div class="masonry__item masonry__item--financy">
+          <div class="masonry__item__inner masonry__item__inner--purple">
+            <span>Zmeň svoj život</span>
+            <span class="bold">s finančnou nezávislosťou</span></span>
+          </div>
+        </div>        
+        <div class="masonry__item masonry__item--education">
+          <div class="masonry__item__inner masonry__item__inner--gold">
+            <span>Zmeň svoj život</span>
+            <span class="bold">vo vzdelávaní</span></span>
+          </div>
+        </div>        
+      
+      </section><!--end of masonry-->
+
+      <section class="section section--offer"> 
+          <div class="section__parallax">
+            <img src="./assets/svg/logo.svg" class="section__parallax__logo"></img>
+          </div> 
+          <div class="section__content">
+            <div id="offer" class="section__container">
+              <h2 class="section__heading">Čo ponúka Leonides</h2>
+    
+              <ul class="section__list">
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--gold">
+                    <span class="section__list__link__header">
+                      Informácie
+                    </span>
+                    <img
+                      src="assets/menu/menu-offer-1.jpg"
+                      alt=""
+                      class="section__list__link__img img"
+                    />
+                    <span class="section__list__link__bottom"></span>
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--purple">
+                    <span class="section__list__link__header">
+                      Osobný<br />rozvoj
+                    </span>
+                    <img
+                      src="assets/menu/menu-offer-2.jpg"
+                      alt=""
+                      class="section__list__link__img img"
+                    />
+                    <span class="section__list__link__bottom"></span>
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--grey">
+                    <span class="section__list__link__header">
+                      Príležitosť
+                    </span>
+                    <img
+                      src="assets/menu/menu-offer-3.jpg"
+                      alt=""
+                      class="section__list__link__img img"
+                    />
+                    <span class="section__list__link__bottom"></span>
+                  </a>
+                </li>
+              </ul>
+    
+              <h4 class="section__subheading section__subheading--gold">
+                Informácie
+              </h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+                perspiciatis quia blanditiis laudantium, perferendis corrupti
+                quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+                officia quidem accusamus dolore? Tempore! Eos eligendi quibusdam
+                rerum quos, iste quidem eius accusamus, eum explicabo molestiae
+                molestias obcaecati nesciunt a officiis rem veritatis officia sit
+                itaque!
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+                commodi numquam dicta consequuntur, at eius ad cumque ratione?
+                Consequuntur, odio. Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Dolores labore ratione, quo excepturi a mollitia
+                ipsum harum magnam fuga expedita velit maiores distinctio
+                repudiandae sequi neque dolor illum vel doloremque. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Est aut ab aliquid
+                voluptas? Autem cumque, officiis placeat adipisci aut sapiente
+                dolorum impedit, sequi modi in dolore iusto vel aliquid
+                accusantium?Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Qui quaerat magni aut iure.
+              </p>
+              <h4 class="section__subheading section__subheading--purple">
+                Osobný rozvoj
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+                commodi numquam dicta consequuntur, at eius ad cumque ratione?
+                Consequuntur, odio. Aliquid ducimus libero quia velit veritatis
+                voluptatem, officiis ut laudantium consectetur, facere sit nihil id?
+                Rerum odio similique doloribus. Blanditiis, placeat delectus.
+                Dolores labore ratione, quo excepturi a mollitia ipsum harum magnam
+                fuga expedita velit maiores distinctio repudiandae sequi neque dolor
+                illum vel doloremque. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Est aut ab aliquid voluptas? Autem cumque,
+                officiis placeat adipisci aut sapiente dolorum impedit, sequi modi
+                in dolore iusto vel aliquid accusantium?Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Qui quaerat magni aut iure.
+              </p>
+              <h4 class="section__subheading section__subheading--grey">
+                Príležitosť
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+                commodi numquam dicta consequuntur, at eius ad cumque ratione?
+                Consequuntur, odio. Aliquid ducimus libero quia velit veritatis
+                voluptatem, officiis ut laudantium consectetur, facere sit nihil id?
+                Rerum odio similique doloribus. Blanditiis, placeat delectus.
+                Dolores labore ratione, quo excepturi a mollitia ipsum harum magnam
+                fuga expedita velit maiores distinctio repudiandae sequi neque dolor
+                illum vel doloremque. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Est aut ab aliquid voluptas? Autem cumque,
+                officiis placeat adipisci aut sapiente dolorum impedit, sequi modi
+                in dolore iusto vel aliquid accusantium?Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Qui quaerat magni aut iure.
+              </p>            
+              <span class="section__footer"></span>
+            </div><!-- end container -->  
+            <img src="./assets/images/boats.png" class="section__parallax--img" alt="money"></img>
+          </div>
+      </section><!--end of offer-->
+      
+
+      <section class="section section--needs"> 
+          <div class="section__parallax">
+            <img src="./assets/svg/logo.svg" class="section__parallax__logo"></img>
+          </div> 
+          <div class="section__content">
+            <div id="needs" class="section__container">
+              <h2 class="section__heading">Potreby ľudí</h2>    
+              <ul class="section__list">
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--gold">
+                    <span class="section__list__link__header">
+                      Deti
+                    </span>
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-1.jpg"
+                        alt=""
+                        class="section__list__link__img img  "
+                      />  
+                    </div>                  
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--purple">
+                    <span class="section__list__link__header">
+                      Bývanie
+                    </span>
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-2.jpg"
+                        alt=""
+                        class="section__list__link__img img "
+                      />  
+                    </div>                  
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--grey">
+                    <span class="section__list__link__header">
+                      Sporenie
+                    </span>
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-3.jpg"
+                        alt=""
+                        class="section__list__link__img img "
+                      />   
+                    </div>                 
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--black">
+                    <span class="section__list__link__header">
+                      Dôchodok
+                    </span>
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-4.jpg"
+                        alt=""
+                        class="section__list__link__img img "
+                      />  
+                    </div>                  
+                  </a>
+                </li>
+              </ul>
+    
+              <h4 class="section__subheading section__subheading--gold">
+                Deti
+              </h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+                perspiciatis quia blanditiis laudantium, perferendis corrupti
+                quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+                officia quidem accusamus dolore? Tempore! Eos eligendi quibusdam
+                rerum quos, iste quidem eius accusamus, eum explicabo molestiae
+                molestias obcaecati nesciunt a officiis rem veritatis officia sit
+                itaque!
+              </p>
+              <h4 class="section__subheading section__subheading--purple">
+                Bývanie
+              </h4>
+              <p>
+                voluptatem, officiis ut laudantium consectetur, facere sit nihil id?
+                Rerum odio similique doloribus. Blanditiis, placeat delectus.
+                Dolores labore ratione, quo excepturi a mollitia ipsum harum magnam
+                fuga expedita velit maiores distinctio repudiandae sequi neque dolor
+                illum vel doloremque. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Est aut ab aliquid voluptas? Autem cumque,
+                officiis placeat adipisci aut sapiente dolorum impedit, sequi modi
+                in dolore iusto vel aliquid accusantium?Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Qui quaerat magni aut iure.
+              </p>
+              <h4 class="section__subheading section__subheading--grey">
+                Sporenie
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+                commodi numquam dicta consequuntur, at eius ad cumque ratione?
+                Consequuntur, odio. Aliquid ducimus libero quia velit veritatis
+                voluptatem, officiis ut laudantium consectetur, facere sit nihil id?
+                Rerum odio similique doloribus. Blanditiis, placeat delectus.
+                Est aut ab aliquid voluptas? Autem cumque,
+                officiis placeat adipisci aut sapiente dolorum impedit, sequi modi
+                in dolore iusto vel aliquid accusantium?Lorem ipsum dolor, sit amet
+                consectetur adipisicing elit. Qui quaerat magni aut iure.
+              </p>            
+              <h4 class="section__subheading section__subheading--black">
+                Dôchodok
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam,
+                eaque perspiciatis nesciunt enim in atque ea dolore laudantium nihil
+                commodi numquam dicta consequuntur, at eius ad cumque ratione?
+                Consequuntur, odio. Aliquid ducimus libero quia velit veritatis
+                voluptatem, officiis ut laudantium consectetur, facere sit nihil id?
+                Rerum odio similique doloribus. Blanditiis, placeat delectus.
+                Dolores labore ratione, quo excepturi a mollitia ipsum harum magnam
+                fuga expedita velit maiores distinctio repudiandae sequi neque dolor
+                illum vel doloremque. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. 
+              </p>            
+              <span class="section__footer"></span>
+            </div><!-- end container -->  
+          </div>
+      </section><!--end of needs-->
+
+      <section class="section section--transform"> 
+          <div class="section__parallax">
+            <img src="./assets/svg/logo.svg" class="section__parallax__logo"></img>
+          </div> 
+          <div class="section__content">
+            <div id="transform" class="section__container">
+              <h2 class="section__heading">Zmenň svoj život</h2>    
+              <ul class="section__list">
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--gold">
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-2.jpg"
+                        alt=""
+                        class="section__list__link__img img  "
+                      />    
+                    </div>                
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--purple">
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-1.jpg"
+                        alt=""
+                        class="section__list__link__img img "
+                      />  
+                    </div>                  
+                  </a>
+                </li>
+                <li class="section__list__item">
+                  <a href="#" class="section__list__link slide section__list__link--grey">
+                    <div class="circle-img">
+                      <span class="circle-img__circle circle-img__circle--big"></span>
+                      <img
+                        src="assets/menu/menu-need-3.jpg"
+                        alt=""
+                        class="section__list__link__img img "
+                      />   
+                    </div>                 
+                  </a>
+                </li>                
+              </ul>
+    
+              <h4 class="section__subheading section__subheading--gold">
+                Transform your life !
+              </h4>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+                perspiciatis quia blanditiis laudantium, perferendis corrupti
+                quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+                officia quidem accusamus dolore? Tempore! Eos eligendi quibusdam
+                rerum quos, iste quidem eius accusamus, eum explicabo molestiae
+                molestias obcaecati nesciunt a officiis rem veritatis officia sit
+                itaque!
+              </p>                    
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+                perspiciatis quia blanditiis laudantium, perferendis corrupti
+                quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+                officia quidem accusamus dolore? Tempore! Eos eligendi quibusdam
+                rerum quos, iste quidem eius accusamus, eum explicabo molestiae
+                molestias obcaecati nesciunt a officiis rem veritatis officia sit
+                itaque!
+              </p>                    
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, odit
+                perspiciatis quia blanditiis laudantium, perferendis corrupti
+                quibusdam aperiam magnam voluptatem soluta quasi eaque non impedit
+                officia quidem accusamus dolore? Tempore! Eos eligendi quibusdam
+                rerum quos, iste quidem eius accusamus, eum explicabo molestiae
+                molestias obcaecati nesciunt a officiis rem veritatis officia sit
+                itaque!
+              </p>                    
+              <span class="section__footer"></span>
+            </div><!-- end container -->  
+          </div>
+      </section><!--end of transform-->
+
+      <section class="section section--partners"> 
+          <div class="section__parallax">
+            <img src="./assets/svg/logo.svg" class="section__parallax__logo"></img>
+          </div> 
+          <div class="section__content">
+            <div id="partners" class="section__container">
+              <h2 class="section__heading">Partneri</h2>    
+              <ul class="section__list">
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>      
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>      
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>      
+                <li class="section__list__item"><a href="#" class="section__list__link slide">Company name</a></li>      
+              </ul>      
+              <span class="section__footer"></span>
+            </div><!-- end container -->  
+          </div>
+      </section><!--end of partners-->
+
+      <section class="section section--map map">
+        <div id="map" class="map"></div>
+      </section><!--end of map-->
+
+      <section class="section section--contact"> 
+        <div class="section__parallax">
+          <img src="./assets/svg/logo.svg" class="section__parallax__logo"></img>
+        </div> 
+        <div class="section__content">
+          <div id="contact" class="section__container">
+            <h2 class="section__heading">Kontakt</h2> 
+
+            <address class="address slide">
+              <span class="address__address">Adresa</span> Some street, City, 000 00<br />
+              <span class="address__tel">Telefón +xxx xxx xxx xxx</span><br />
+              <span class="address__city">Mesto</span> City / State<br />
+            </address>
+
+            <form novalidate action="" class="contact-form slide">
+              <div class="contact-form__consignor">
+
+                <div class="contact-form__consignor__input">
+                  <input type="text" name="name" id="name" class="contact-form__consignor__input__spot" placeholder="Meno" required>   
+                  <span class="error"></span>               
+                </div>
+
+                <div class="contact-form__consignor__input">
+                  <input type="email" name="email" id="email" class="contact-form__consignor__input__spot" placeholder="Email"  pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required> 
+                  <span class="error"></span>                 
+                </div>
+                
+                <div class="contact-form__consignor__input">
+                  <input type="tel" name="tel" id="tel" class="contact-form__consignor__input__spot" placeholder="Telefón" required>    
+                  <span class="error">asd</span>              
+                </div>
+              </div>
+              <div class="contact-form__message">
+                <textarea name="message" id="message" cols="30" rows="7" class="contact-form__message__textarea" required minlength="10" placeholder="Odkaz..."></textarea>
+                <span class="error"></span>
+              </div>
+              <div class="contact-form__submit">
+                <input type="submit" value="Odoslať" class="contact-form__submit__input">
+              </div>
+            </form>
+          </div><!-- end container -->  
+        </div>
+    </section><!--end of contact-->
+    </main>
+
+    <footer class="footer">
+      <img src="./assets/svg/logo-head.svg" class="footer__logo"></img>
+      <small class="footer__copyright">designed by<br/>
+        <span class="footer__copyright__first-name">XXXXXX</span> XXXXXXX
+      </small>
+    </footer>
+
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__list-item">
+          <a href="#" class="social__link"><i>f</i></a>
+        </li>
+        <li class="social__list-item">
+          <a href="#" class="social__link"><i>t</i></a>
+        </li>
+        <li class="social__list-item">
+          <a href="#" class="social__link"><i>g</i></a>
+        </li>
+      </ul>
+    </div>    
+
+    <script>
+      function initMap() {  
+
+
+        
+      var loc = {lat: 49.001024, lng: 21.237283};
+      var map = new google.maps.Map(
+          document.getElementById('map'), {
+            zoom: 18, 
+            center: loc,
+            mapTypeControl: false,
+            zoomControlOptions: {
+              position: google.maps.ControlPosition.LEFT_TOP
+            },
+            streetViewControl: false
+          });
+      var marker = new google.maps.Marker({position: loc, map: map});
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABWfflxPj2Z8ou86Q1Nvhhnzg8IzgSljc&callback=initMap">
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

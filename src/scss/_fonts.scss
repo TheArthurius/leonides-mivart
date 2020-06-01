@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "MostraNuova-Regular";
+  src: url("../fonts/MostraNuova-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MostraNuova-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* Super Modern Browsers */ url("../fonts/MostraNuova-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/MostraNuova-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/MostraNuova-Regular.svg#svgFontName") format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "MostraNuova-Bold";
+  src: url("../fonts/MostraNuova-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MostraNuova-Bold.eot?#iefix") format("embedded-opentype"),
+    /* Super Modern Browsers */ url("../fonts/MostraNuova-Bold.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/MostraNuova-Bold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/MostraNuova-Bold.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "MostraNuova-Light";
+  src: url("../fonts/MostraNuova-Light.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MostraNuova-Light.eot?#iefix") format("embedded-opentype"),
+    /* Super Modern Browsers */ url("../fonts/MostraNuova-Light.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/MostraNuova-Light.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/MostraNuova-Light.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url("../fonts/MyriadPro-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"),
+    /* Super Modern Browsers */ url("../fonts/MyriadPro-Regular.woff")
+      format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/MyriadPro-Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/MyriadPro-Regular.svg#svgFontName")
+      format("svg"); /* Legacy iOS */
+}

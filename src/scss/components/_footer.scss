@@ -1,0 +1,28 @@
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  z-index: 5;
+
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+
+  &__logo {
+    width: 15%;
+    margin-bottom: 1.5em;
+  }
+
+  &__copyright {
+    color: $color-primary;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    margin-bottom: 3em;
+
+    &__first-name {
+      color: $color-grey;
+    }
+  }
+}
